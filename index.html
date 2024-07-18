@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <h2>BMI (Body Mass Index) calculator adalah alat untuk menghitung indeks massa tubuh seseorang berdasarkan berat dan tinggi badan mereka. BMI digunakan sebagai indikator umum untuk menilai apakah seseorang memiliki berat badan yang sehat berdasarkan proporsi tinggi badan mereka.</h2>
+            <h2>BMI (Body Mass Index) calculator adalah alat untuk 
+                menghitung indeks massa tubuh seseorang berdasarkan berat dan tinggi badan mereka. 
+                BMI digunakan sebagai indikator umum untuk menilai apakah seseorang memiliki berat badan yang sehat 
+                berdasarkan proporsi tinggi badan mereka.</h2>
+            <form id="bmiForm">
+            
+                <label for="height">Tinggi (cm):</label>
+                <input type="number" id="height" name="height" required>
+            
+                <label for="weight">Berat (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="male">Laki-Laki</option>
+                    <option value="female">Wanita</option>
+                </select>
+                
+                <button type="submit">Hitung BMI</button>
+            </form>
+    
+            <div id="bmiResult">
+                <!-- Hasil BMI akan ditampilkan di sini -->
+            </div>
+        </div>
+    
+        <script src="js/script.js"></script>
+    </body>
+</html>
